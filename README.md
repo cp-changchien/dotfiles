@@ -16,7 +16,7 @@ After installing Homebrew and Command Line Tool, clone the repo into a new hidde
 # Using HTTPS
 git clone https://github.com/cp-changchien/dotfiles.git ~/.dotfiles
 ```
-The various configuration files in this repo using [GNU Stow](https://www.gnu.org/software/stow/). This allows setting up symlinks for all dotfiles using a single command:
+The various configuration files in this repo are linked using [GNU Stow](https://www.gnu.org/software/stow/). This allows setting up symlinks for all dotfiles using a single command:
 
 ```command line
 brew install stow
