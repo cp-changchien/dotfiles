@@ -2,6 +2,7 @@
 This repo contains my dotfile configuration, allowing for a consistent computing experience across multiple machines. 
 
 ## How to Install
+### MacOS
 For an MacOS dsitribution, it is recommended to install Apple's Command Line Tools using Homebrew
 ```command line
 # Install Homebrew
