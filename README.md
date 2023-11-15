@@ -23,6 +23,19 @@ brew install stow
 cd ~/.dotfiles
 stow .
 ```
+> [!NOTE]  
+> tmux might require to be setup additionally, since the tmp (Tmux Plugin Manager) cannot be git. <br/>
+> Follow the below procedure to install and finish tmux configuration
+
+First, clone the repo to install tpm
+```command line
+# Install tpm
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+# Once install, source the tmux.conf file (wheryou store your tmux.conf file)
+tmux source ~/.dotfiles/.config/tmux/tmux.conf
+```
+
 
 ### Windows
 For a Windows distribution, it is recommended to install PowerShell with winget commands,
