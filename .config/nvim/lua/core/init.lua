@@ -16,6 +16,7 @@ opt.clipboard = "unnamedplus"
 opt.cursorline = true
 
 -- Indenting
+opt.linespace = 10
 opt.expandtab = true
 opt.shiftwidth = 4
 opt.smartindent = true
