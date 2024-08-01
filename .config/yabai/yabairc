@@ -28,3 +28,8 @@ yabai -m config mouse_drop_action swap
 # Disable specific apps
 yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Calculator$" manage=off
+# yabai -m rule --add app="^Finder$" manage=off
+
+## Status bar
+yabai -m config --dispaly 0 external_bar all:20:0
+yabai -m config --dispaly 1 external_bar all:30:0

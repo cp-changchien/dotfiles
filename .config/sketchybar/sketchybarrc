@@ -22,12 +22,13 @@ source "$ITEM_DIR/spaces.sh"
 
 # Right
 source "$ITEM_DIR/control_center.sh"
+# source "$ITEM_DIR/clock.sh"
 source "$ITEM_DIR/datetime.sh"
 source "$ITEM_DIR/dnd.sh"
 source "$ITEM_DIR/wifi.sh"
 source "$ITEM_DIR/battery.sh"
 source "$ITEM_DIR/volume.sh"
-source "$ITEM_DIR/diskmonitor.sh"
+# source "$ITEM_DIR/diskmonitor.sh"
 source "$ITEM_DIR/messages.sh"
 source "$ITEM_DIR/transmission.sh"
 source "$ITEM_DIR/weather.sh"
@@ -39,7 +40,7 @@ sketchybar \
         --add bracket left_side logo yabai '/space\..*/' \
         --set left_side "${bracket_defaults[@]}" \
 \
-        --add bracket status_icons weather transmission messages diskmonitor volume_icon volume battery wifi dnd date clock control_center \
+        --add bracket status_icons weather transmission messages volume_icon volume battery wifi dnd date control_center \
         --set status_icons "${bracket_defaults[@]}"
 
 sketchybar --hotload on

@@ -7,7 +7,7 @@ music=(
   "${bracket_defaults[@]}"
   script="$PLUGIN_DIR/music.sh"
   popup.align=center
-  padding_left=150
+  padding_left=120
   label.padding_right=$PADDINGS
   padding_right=$(($PADDINGS * 1))
   drawing=off
@@ -16,7 +16,7 @@ music=(
   background.image.scale=0.75
   background.image.corner_radius=$PADDINGS
   icon.padding_left=37
-  label.max_chars=17
+  label.max_chars=12
   updates=on
   --subscribe music media_change
 )
