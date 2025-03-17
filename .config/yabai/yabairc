@@ -8,14 +8,14 @@ yabai -m config active_window_opacity 1.0
 yabai -m config normal_window_opacity 0.8
 
 # padding
-yabai -m config top_padding 24
-yabai -m config bottom_padding 24
-yabai -m config left_padding 24
-yabai -m config right_padding 24
-yabai -m config window_gap 24
+yabai -m config top_padding 16
+yabai -m config bottom_padding 12
+yabai -m config left_padding 12
+yabai -m config right_padding 12
+yabai -m config window_gap 12
 
 # mouse settings
-yabai -m config mouse_follows_focus on
+# yabai -m config mouse_follows_focus on
 
 yabai -m config mouse_modifier alt
 
@@ -28,8 +28,17 @@ yabai -m config mouse_drop_action swap
 # Disable specific apps
 yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Calculator$" manage=off
-# yabai -m rule --add app="^Finder$" manage=off
+yabai -m rule --add app="^LINE$" manage=off
+yabai -m rule --add app="^Finder$" manage=off
+yabai -m rule --add app="^TextEdit$^" manage=off
+yabai -m rule --add app="^Safari$^" manage=off
+yabai -m rule --add app="^Riot Client$" manage=off
+yabai -m rule --add app="^League of Legends$" manage=off
 
-## Status bar
+# yabai -m signal --add event=window_created \
+#     app="^Safari$" \
+#     action="osascript -e 'tell application \"System Events\" to keystroke \"f\" using {command down, control down}'"
+
+# Status bar
 yabai -m config --dispaly 0 external_bar all:20:0
 yabai -m config --dispaly 1 external_bar all:30:0

@@ -16,7 +16,7 @@ music=(
   background.image.scale=0.75
   background.image.corner_radius=$PADDINGS
   icon.padding_left=37
-  label.max_chars=12
+  label.max_chars=15
   updates=on
   --subscribe music media_change
 )
